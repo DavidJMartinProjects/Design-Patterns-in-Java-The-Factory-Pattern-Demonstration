@@ -1,12 +1,16 @@
 
-public class SedanCar extends Car {
+public class SedanCar extends Car implements CarBehaviour {
 	public SedanCar() {
 		super(CarType.SEDAN);
 		construct();
 	}
 
-	// implementation of abstract method in parent class
+	//override base class construct() method
 	public void construct() {
-		System.out.println("Building Sedan Car...");
-	}
+		System.out.println("Building Sedan Car Class...");
+	};
+	//implement interface methods 
+	public void drive() {
+		System.out.println("Sedan Car is Driving..");
+	};
 }

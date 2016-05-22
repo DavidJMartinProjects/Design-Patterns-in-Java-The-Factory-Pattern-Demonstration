@@ -1,14 +1,19 @@
-// Car.java is an abstract class & the parent class of all car instances and it will also contain the common behaviour and attributes for all objects of type Car
+// Car.java is the parent class of all car instances 
 
-public abstract class Car {	
+public class Car {	
 	private CarType model = null;
 	
 	public Car(CarType model) {
 		this.model = model;
 	}	
 	
-	//abstract construct() method 
-	protected abstract void construct();
+	public void construct () {
+		System.out.println("Building Standard Car Base Class...");
+	};
+	//implement interface methods 
+	public void drive() {
+		System.out.println("Standard Car is Driving..");
+	};
 	
 	// getters and setters
 	public CarType getModel() {

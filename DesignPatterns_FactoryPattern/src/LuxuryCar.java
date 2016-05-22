@@ -1,12 +1,17 @@
 
-public class LuxuryCar extends Car {
+public class LuxuryCar extends Car implements CarBehaviour {
 	public LuxuryCar() {
 		super(CarType.LUXURY);
 		construct();
 	}
 
-	// implementation of abstract method in parent class
-	protected void construct() {
-		System.out.println("Building Luxury Car...");		
-	}
+	//override base class construct() method
+	public void construct() {
+		System.out.println("Building Luxury Car Class...");
+	};
+	//implement interface methods 
+	public void drive() {
+		System.out.println("Luxury Car is Driving..");
+	};
+	
 }
