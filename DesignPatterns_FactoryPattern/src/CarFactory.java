@@ -1,5 +1,8 @@
 // the CarFactory class will instantiate a car instance after determining its type
 public class CarFactory {
+	
+	// private constructor to prevent instantiation
+	private CarFactory() {};
 
 	public static Car buildCar(CarType model) {
 		Car car = null;
