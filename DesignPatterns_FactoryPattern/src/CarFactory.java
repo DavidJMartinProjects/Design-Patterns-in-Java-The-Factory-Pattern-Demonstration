@@ -1,4 +1,4 @@
-// the CarFactory class will instantiates a car instance after determining its type
+// the CarFactory class will instantiate a car instance after determining its type
 public class CarFactory {
 
 	public static Car buildCar(CarType model) {
