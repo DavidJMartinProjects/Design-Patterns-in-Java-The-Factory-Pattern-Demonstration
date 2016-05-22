@@ -5,6 +5,7 @@ public class SedanCar extends Car {
 		construct();
 	}
 
+	// implementation of abstract method in parent class
 	public void construct() {
 		System.out.println("Building Sedan Car...");
 	}
