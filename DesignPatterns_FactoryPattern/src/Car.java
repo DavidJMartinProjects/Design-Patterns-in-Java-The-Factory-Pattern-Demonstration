@@ -9,11 +9,11 @@ public class Car {
 	
 	public void construct () {
 		System.out.println("Building Standard Car Base Class...");
-	};
+	}
 	//implement interface methods 
 	public void drive() {
 		System.out.println("Standard Car is Driving..");
-	};
+	}
 	
 	// getters and setters
 	public CarType getModel() {
